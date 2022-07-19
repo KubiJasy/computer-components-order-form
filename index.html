@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Components Order Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gantari:wght@100;300;400;700&family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+
+</head>
+<body>
+    <header>
+        <div id="branding">
+            <img src="assets/7568372066_4ecd916e-d65b-4752-8ac2-5cfe000174e4.png" alt="Bossman company logo">
+            <h1>Bossman&nbsp;Computers</h1>
+        </div>
+    </header>
+    <div class="wrapper">
+        <form action="#" method="post" autocomplete="on" class="form-container">
+            <section class="wrapper-size1">
+                <legend><h3 class="first-h3">Order Details</h3></legend>
+                <div class="container-50">
+                    <label for="invoice-no" class="label-100">Invoice No.</label>
+                    <input type="text" name="invoice-no" id="invoice-no" placeholder="BCXXXXXX" class="field-100" readonly>
+                </div>
+                <div class="container-50">
+                    <label for="date" class="label-100">Date</label>
+                    <input type="date" name="date" id="date" class="field-100" placeholder="Date of Invoice">
+                </div>
+    
+                <div class="container-50">
+                    <label for="category" class="label-100">Select the computer part: </label>
+                    <select class="computers field-100" name="category" id="category" size="3" multiple>
+                    </select>
+                </div>
+                <div class="container-50">
+                    <label for="component-name" class="label-100">Add items to your cart:</label>
+                    <select class="computers field-100" name="component-name" id="component-name" size="3" multiple>
+                        
+                    </select>
+                </div>
+                <div class="container-50">
+                    <label for="customer-name" class="label-100">Name</label>
+                    <input type="text" name="customer-name" id="customer-name" placeholder="Enter your name"  class="field-100" required>
+                </div>
+                <div class="container-50">
+                    <label for="email-address" class="label-100">Email</label>
+                    <input type="email" name="email-address" id="email-address" placeholder="Enter your email address" class="field-100" required>
+                </div>
+                <div class="container-75">
+                    <label for="customer-address" class="label-100"><span class="required required-none">* </span>Address</label>
+                    <input type="text" name="customer-address" id="customer-address"  placeholder="Hse No, St, Town" class="field-100">
+                </div>
+                <div class="container-25">
+                    <label for="zip-or-postal-code"  class="label-100">Zip/Postal Code</label>
+                    <input type="text" name="zip-or-postal-code" id="zip-or-postal-code" placeholder="Zip/Postal Code" class="field-100" required>
+                </div>
+                <div class="container-33">
+                    <label for="country"  class="label-100">Choose a country: </label>
+                    <select class="computers field-100 selectdiv" name="country" id="country" required>
+                    
+                    </select>
+                </div>
+                <div class="container-33">
+                    <label for="state-or-region" class="label-100">State/Region</label>
+                    <input type="text" name="state-or-region" id="state-or-region" placeholder="State or Region" class="field-100" required>
+                </div>
+                <div class="container-33">
+                    <label for="city" class="label-100">City </label>
+                    <input type="text" name="city" id="city" placeholder="City" class="field-100" required>
+                </div>
+                <div class="container-100">
+                    <label for="additional-details" class="label-100">Additional Details (for courier, order specifications .etc)</label>
+                    <textarea name="additional-details" id="additional-details" cols="25" rows="5" placeholder="Specific notes regarding your order..." class="field-100"></textarea>
+                </div>
+            </section>
+            <section class="wrapper-size2">
+                <legend><h3 class="second-h3">Cart</h3></legend>
+                <div class="cart">
+                
+                </div>
+                <div class="price">
+                    <p class="total">Total: GH&#8373;<span class="total-price">0.00</span></p>
+                </div>
+            </section>
+            <section class="wrapper-size3">
+                <legend><h3 class="third-h3">Payment Details</h3></legend>
+                <p>Choose Payment Method:</p>
+                <div class="payment-methods">
+                    <img src="assets/Visa-card-light.png" alt="">
+                    <img src="assets/MasterCard-light.png" alt="">
+                    <img src="assets/Paypal-card-light.png" alt="">
+                </div>
+                <div class="payment-form">
+                    <div class="container-100 ">
+                        <label for="cardholder-name" class="label-100">Cardholder's Name</label>
+                        <input type="text" name="cardholder-name" id="cardholder-name" placeholder="Jane Doe" class="field-100 payment-form-input" required>
+                    </div>
+                    <div class="container-100 ">
+                        <label for="card-number" class="label-100">Card Number</label>
+                        <input type="tel" name="card-number" id="card-number" class="field-100 payment-form-input" placeholder="XXXX XXXX XXXX XXXX" minlength="19" maxlength="19" inputmode="numeric" required>
+                    </div>
+                    <div class="container-50 ">
+                        <label for="expiry-date" class="label-100">Expiry Date</label>
+                        <input type="text" name="expiry-date" id="expiry-date" class="field-100 payment-form-input" placeholder="MM/YY" inputmode="numeric" required>
+                    </div>
+                    <div class="container-50 ">
+                        <label for="security-code" class="label-100">Security Code</label>
+                        <input type="text" name="security-code" id="security-code" class="field-100 payment-form-input" placeholder="CVV/CVC" minlength="3" maxlength="3" inputmode="numeric" required>
+                    </div>
+                </div>
+            </section>
+            <div id="submit" class="wrapper-size3"><input type="submit" value="Complete Order"></div>
+        </form>
+    </div>
+    <footer>&copy;2022 Bossman Computers and Electronics</footer>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html> 
