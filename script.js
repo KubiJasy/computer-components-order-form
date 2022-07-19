@@ -1,5 +1,6 @@
-"use strict";
-import data from '/data.json' assert {type: 'json'};
+"use strict"; 
+
+import data from '/Web App Dev/data.json' assert {type: 'json'};
 
 // event listener to check if the dom content has loaed
 document.addEventListener("DOMContentLoaded", function() {
